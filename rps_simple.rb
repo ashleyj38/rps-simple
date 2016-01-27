@@ -46,40 +46,34 @@ loop do
 
 	if (userChoice == "rock")
 		if (computerChoice == "rock")
-			puts "The computer chose #{computerChoice}"
 			winner = "no one. It's a tie!"
 		elsif (computerChoice == "scissors")
-			puts "The computer chose #{computerChoice}"
 			winner = "you!"
 		else
-			puts "The computer chose #{computerChoice}"
 			winner = "computer. Sorry..."
 		end
-			
+		
+		puts "The computer chose #{computerChoice}"
 		puts "You chose #{userChoice}"
 	elsif (userChoice == "paper")
 		if (computerChoice == "paper")
-			puts "cThe computer chose#{computerChoice}"
 			winner = "no one. It's a tie!"
 		elsif (computerChoice == "rock")
-			puts "The computer chose #{computerChoice}"
 			winner = "you!"
 		else
-			puts "The computer chose #{computerChoice}"
 			winner = "computer. Sorry..."
 		end
+		puts "The computer chose #{computerChoice}"
 		puts "You chose #{userChoice}"
 	else
 		if (computerChoice == "scissors")
-			puts "The computer chose #{computerChoice}"
 			winner = "no one. It's a tie!"
 		elsif (computerChoice == "paper")
-			puts "The computer chose #{computerChoice}"
 			winner = "you!"
 		else
-			puts "The computer chose #{computerChoice}"
 			winner = "computer. Sorry..."			
 		end
+		puts "The computer chose #{computerChoice}"
 		puts "You chose #{userChoice}"
 	end
 
