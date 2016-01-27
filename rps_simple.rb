@@ -42,7 +42,13 @@ userChoice = gets.chomp
 
 #Determine winner
 
-
+if (userChoice == "rock")
+	puts "userChoice is #{userChoice}"
+elsif (userChoice == "paper")
+	puts "userChoice is #{userChoice}"
+else
+	puts "userChoice is #{userChoice}"
+end
 
 
 #Print resulting winner
