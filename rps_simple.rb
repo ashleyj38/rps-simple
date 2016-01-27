@@ -16,10 +16,23 @@
 
 #Create variables
 
+availChoices = ['rock','paper','scissors']
+
+userChoice = ""
+
+computerChoice = ""
+
+continue = "yes"
+
+winner = ""
+
 
 #start loop
-#Ask the user for their choice
 
+loop do
+#Ask the user for their choice
+puts "Hello, and welcome to the Rock, Paper, Scissors game."
+puts "Please enter your choice of rock, paper, or scissors: "
 
 #Initialize the computer's choice
 
@@ -28,11 +41,15 @@
 
 
 
+
 #Print resulting winner
 
+puts "The winner is #{winner}"
 
 
 #Ask the user to play again
 
+puts "Would you like to play again? Yes or no?"
 
-#end loop
+
+end #end loop
