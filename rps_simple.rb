@@ -26,12 +26,14 @@ continue = "yes"
 
 winner = ""
 
+#User welcome
+puts "Hello, and welcome to the Rock, Paper, Scissors game."
 
 #start loop
 
 loop do
 	#Ask the user for their choice
-	puts "Hello, and welcome to the Rock, Paper, Scissors game."
+	
 	puts "Please enter your choice of rock, paper, or scissors: "
 
 	userChoice = gets.chomp
@@ -44,41 +46,41 @@ loop do
 
 	if (userChoice == "rock")
 		if (computerChoice == "rock")
-			puts "computerChoice is #{computerChoice}"
+			puts "The computer chose #{computerChoice}"
 			winner = "no one. It's a tie!"
 		elsif (computerChoice == "scissors")
-			puts "computerChoice is #{computerChoice}"
+			puts "The computer chose #{computerChoice}"
 			winner = "you!"
 		else
-			puts "computerChoice is #{computerChoice}"
+			puts "The computer chose #{computerChoice}"
 			winner = "computer. Sorry..."
 		end
 			
-		puts "userChoice is #{userChoice}"
+		puts "You chose #{userChoice}"
 	elsif (userChoice == "paper")
 		if (computerChoice == "paper")
-			puts "computerChoice is #{computerChoice}"
+			puts "cThe computer chose#{computerChoice}"
 			winner = "no one. It's a tie!"
 		elsif (computerChoice == "rock")
-			puts "computerChoice is #{computerChoice}"
+			puts "The computer chose #{computerChoice}"
 			winner = "you!"
 		else
-			puts "computerChoice is #{computerChoice}"
+			puts "The computer chose #{computerChoice}"
 			winner = "computer. Sorry..."
 		end
-		puts "userChoice is #{userChoice}"
+		puts "You chose #{userChoice}"
 	else
 		if (computerChoice == "scissors")
-			puts "computerChoice is #{computerChoice}"
+			puts "The computer chose #{computerChoice}"
 			winner = "no one. It's a tie!"
 		elsif (computerChoice == "paper")
-			puts "computerChoice is #{computerChoice}"
+			puts "The computer chose #{computerChoice}"
 			winner = "you!"
 		else
-			puts "computerChoice is #{computerChoice}"
+			puts "The computer chose #{computerChoice}"
 			winner = "computer. Sorry..."			
 		end
-		puts "userChoice is #{userChoice}"
+		puts "You chose #{userChoice}"
 	end
 
 
