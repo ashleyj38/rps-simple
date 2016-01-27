@@ -43,10 +43,32 @@ loop do
 	#Determine winner
 
 	if (userChoice == "rock")
+		if (computerChoice == "rock")
+			puts "computerChoice is #{computerChoice}"
+		elsif (computerChoice == "scissors")
+			puts "computerChoice is #{computerChoice}"
+		else
+			puts "computerChoice is #{computerChoice}"
+		end
+			
 		puts "userChoice is #{userChoice}"
 	elsif (userChoice == "paper")
+		if (computerChoice == "paper")
+			puts "computerChoice is #{computerChoice}"
+		elsif (computerChoice == "rock")
+			puts "computerChoice is #{computerChoice}"
+		else
+			puts "computerChoice is #{computerChoice}"
+		end
 		puts "userChoice is #{userChoice}"
 	else
+		if (computerChoice == "scissors")
+			puts "computerChoice is #{computerChoice}"
+		elsif (computerChoice == "paper")
+			puts "computerChoice is #{computerChoice}"
+		else
+			puts "computerChoice is #{computerChoice}"			
+		end
 		puts "userChoice is #{userChoice}"
 	end
 
