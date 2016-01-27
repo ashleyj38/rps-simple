@@ -96,7 +96,7 @@ loop do
 
 	continue = gets.chomp
 
-	if (continue != "yes")
+	if (continue.downcase != "yes")
 		break
 	end
 
