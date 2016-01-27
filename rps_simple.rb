@@ -38,6 +38,13 @@ loop do
 
 	userChoice = gets.chomp
 
+	#Validate user input
+
+	until availChoices.include?(userChoice.downcase)
+		puts "'#{userChoice}' is not a valid choice. Please enter rock, paper, or scissors."
+		userChoice = gets.chomp
+	end
+
 	#Initialize the computer's choice
 
 	 computerChoice = availChoices.sample
