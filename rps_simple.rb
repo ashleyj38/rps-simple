@@ -64,6 +64,7 @@ continue = gets.chomp
 
 if (continue != "yes")
 	break
+end
 
 
 end #end loop
