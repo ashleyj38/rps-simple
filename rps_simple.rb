@@ -34,8 +34,11 @@ loop do
 puts "Hello, and welcome to the Rock, Paper, Scissors game."
 puts "Please enter your choice of rock, paper, or scissors: "
 
+userChoice = gets.chomp
+
 #Initialize the computer's choice
 
+ computerChoice = availChoices.sample
 
 #Determine winner
 
@@ -50,6 +53,11 @@ puts "The winner is #{winner}"
 #Ask the user to play again
 
 puts "Would you like to play again? Yes or no?"
+
+continue = gets.chomp
+
+if (continue != "yes")
+	break
 
 
 end #end loop
