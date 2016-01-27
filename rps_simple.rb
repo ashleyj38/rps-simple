@@ -51,7 +51,7 @@ loop do
 
 	#Determine winner
 
-	if (userChoice == "rock")
+	if (userChoice.downcase == "rock")
 		if (computerChoice == "rock")
 			winner = "no one. It's a tie!"
 		elsif (computerChoice == "scissors")
@@ -62,7 +62,7 @@ loop do
 		
 		puts "The computer chose #{computerChoice}"
 		puts "You chose #{userChoice}"
-	elsif (userChoice == "paper")
+	elsif (userChoice.downcase == "paper")
 		if (computerChoice == "paper")
 			winner = "no one. It's a tie!"
 		elsif (computerChoice == "rock")
@@ -73,7 +73,7 @@ loop do
 		puts "The computer chose #{computerChoice}"
 		puts "You chose #{userChoice}"
 	else
-		if (computerChoice == "scissors")
+		if (computerChoice.downcase == "scissors")
 			winner = "no one. It's a tie!"
 		elsif (computerChoice == "paper")
 			winner = "you!"
